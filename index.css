@@ -1,0 +1,221 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none; 
+	font-family: Arial;
+}
+
+.center{
+	margin: 0 auto;
+}
+
+
+/*顶端导航栏*/
+.nav{
+	position: fixed;
+	top: 0px;
+	height: 50px;
+	width: 100%;
+	background: rgba(0,0,0,0.6);
+	z-index: 100;
+}
+
+.nav .title{
+	height: 50px;
+	width: 1000px;
+	/*background: rgba(0,0,0,0.8);*/
+	
+}
+
+.nav .title .list{
+	display: inline;
+}
+.nav .title .left li{
+	float: left;
+}
+
+
+.nav .title .logo{
+	padding-top: 10px; 
+	padding-left: 6px;
+}
+
+
+
+.nav .title .logo .logoImg{
+	width: 34px;
+	height: 34px;
+}
+
+.nav .title .name{
+	padding-top: 14px;
+	padding-left: 5px;
+	color: #fff;
+}
+
+
+.nav .title .name p{
+	font-size: 16px;
+}
+
+.nav .title .right{
+
+}
+
+.nav .title .right li{
+	float: right;
+}
+
+.nav .title .right li .option{
+	padding-top: 13px;
+	padding-right: 20px;
+	padding-left: 20px;
+	color: #fff;
+}
+
+.nav .title .right li .option a{
+	color: #fff;
+}
+
+
+/*头部轮播图*/
+.head{
+	position: relative;
+	height: 400px;
+	width: 100%;
+	background: #0b0924;
+}
+
+
+
+
+
+/*主体内容*/
+.content{
+	position: relative;
+	height: 1300px;
+	width: 100%;
+	background: #f6fdfa;
+}
+
+.content .box{
+	width: 1000px;
+	height: 1300px;
+	background: #f6fdfa;
+}
+
+.content .box .pad{
+	width: 900px;
+	height: 1200px;
+	padding: 50px;
+	background: #f6fdfa;
+	display: grid;
+	grid-template-rows: repeat(4,1fr);
+	grid-template-columns: repeat(3,1fr);
+}
+
+.content .box .pad .item{
+	position: relative;
+	margin: 20px;
+	border: 1px solid #ddd;
+	border-radius: 10px; 
+	background: #fff;
+}
+
+.content .box .pad .item .headline{
+	font-size: 24px;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.content .box .pad .item .logoBox{
+	padding-right: 94px;
+	padding-left: 94px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	height: 70px;
+}
+
+.content .box .pad .item .logoBox img{
+	width: 70px;
+	height: 70px;
+}
+
+
+.content .box .pad .item .text{
+	height: 60px;
+	padding-right: 15px;
+	padding-left: 15px;
+	color: #999;
+	font-size: 16px;
+}
+
+
+
+.content .box .pad .item .btn{
+	height: 50px;
+}
+
+.content .box .pad .item .btn .btnBox{
+	display: inline-block;
+	width: 124px;
+	text-align: center;
+	font-size: 18px; 
+	padding-top: 14px;
+}
+
+.content .box .pad .item .btn .btnBox a{
+	color: blue;
+}
+
+
+
+
+
+
+/*尾部介绍栏*/
+.footer{
+	position: relative;
+	height: 300px;
+	width: 100%;
+	background: #444;
+}
+
+.footer .present{
+	position: relative;
+	width: 860px;
+	height: 300px;
+	background: #444;
+	color: #eee;
+}
+
+.footer .present .footerTitle{
+	padding: 30px 0px;
+	font-size: 18px;
+
+}
+
+.footer .present .footerText{
+	font-size: 14px;
+}
+
+.footer .present .msg{
+	padding-top: 15px;
+	font-size: 14px;
+}
+
+.footer .present .copyright{
+	padding-top: 40px;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
