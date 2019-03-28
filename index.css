@@ -19,7 +19,7 @@
 	width: 100%;
 	background: rgba(0,0,0,0.6);
 	z-index: 100;
-	padding-top: 10px;
+	padding: 10px 0px;
 }
 
 .nav .title{
@@ -28,59 +28,68 @@
 }
 
 .nav .title .logo{
-	display: inline-block;
-	padding-top: 10px; 
-	padding-left: 6px;
+	height: 50px;
 }
 
 .nav .title .logo .logoImg{
+	padding-top: 8px;
 	width: 34px;
 	height: 34px;
 }
 
 .nav .title .name{
 	position: absolute;
-	display: inline-block;
-	padding-left: 5px;
-	padding-top: 10px;
+	padding-left: 9px;
 	color: #fff;
+	line-height: 50px;
 }
 
 .nav .title .name p{
-	font-size: 20px;
+	font-size: 18px;
 }
 
-.nav .title .right{
+.nav .title .list{
 	float: right;
+	display: flex;
+	align-items:center;
 }
 
-.nav .title .right .option{
-	display: inline-block;
-	padding: 10px 30px 0px 30px;
-	color: #fff;
-}
-
-.nav .title .right .option a{
-	color: #fff;
-	font-size: 20px;
-}
-
-.nav .title .right .option a:hover{
-	color: blue;
-	font-size: 20px;
-}
-
-.nav .title .right .letter{
+.nav .title .list .right{
 	display: inline-block;
 }
 
-.nav .title .right .letter div{
+.nav .title .list .right .option{
+	display: inline-block;
+	padding: 0px 30px;
+	line-height: 50px;
+	color: #fff;
+}
+
+.nav .title .list .right .option a{
+	color: #fff;
+	font-size: 18px;
+}
+
+.nav .title .list .right .option a:hover{
+	color: #477de9;
+	font-size: 18px;
+}
+
+.nav .title .list .letterBox{
+	display: inline-block;
+}
+
+.nav .title .list .right .letter{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.nav .title .list .right .letter div{
 	position: absolute;
 	width: 15px;
 	height: 15px;
 	border-radius: 50%;
 	background: red;
-	top: 20px;
 	margin-left: 20px;
 	color: #fff;
 	text-align: center;
@@ -88,21 +97,6 @@
 	line-height: 16px;
 }
 
-
-
-
-.nav .title .right .whiteDot{
-	display: inline-block;
-}
-
-.nav .title .right .whiteDot div{
-	width: 26px;
-	height: 26px;
-	border-radius: 50%;
-	background: #fff;
-	margin-left: 20px;
-	margin-top: 10px;
-}
 
 
 
@@ -194,7 +188,8 @@
 }
 
 .content .box .pad .item .headline{
-	font-size: 24px;
+	font-size: 22px;
+	color: #555;
 	text-align: center;
 	padding-top: 20px;
 }
@@ -217,8 +212,9 @@
 	height: 60px;
 	padding-right: 15px;
 	padding-left: 15px;
-	color: #999;
-	font-size: 16px;
+	color: #909090;
+	font-size: 14px;
+	/* font-family: "PingFangSC"; */
 }
 
 
@@ -231,12 +227,12 @@
 	display: inline-block;
 	width: 49%;
 	text-align: center;
-	font-size: 24px; 
+	font-size: 20px; 
 	padding-top: 16px;
 }
 
 .content .box .pad .item .btn .btnBox a{
-	color: rgb(54, 98, 219);
+	color: #477de9;;
 }
 
 
@@ -262,12 +258,12 @@
 
 .footer .present .footerTitle{
 	padding: 30px 0px;
-	font-size: 18px;
+	font-size: 20px;
 
 }
 
 .footer .present .footerText{
-	font-size: 14px;
+	font-size: 13px;
 }
 
 .footer .present .msg{
@@ -278,6 +274,7 @@
 .footer .present .copyright{
 	padding-top: 40px;
 	text-align: center;
+	font-size: 14px;
 }
 
 
