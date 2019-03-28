@@ -19,29 +19,19 @@
 	width: 100%;
 	background: rgba(0,0,0,0.6);
 	z-index: 100;
+	padding-top: 10px;
 }
 
 .nav .title{
 	height: 50px;
-	width: 1000px;
-	/*background: rgba(0,0,0,0.8);*/
-	
+	width: 1094px;
 }
-
-.nav .title .list{
-	display: inline;
-}
-.nav .title .left li{
-	float: left;
-}
-
 
 .nav .title .logo{
+	display: inline-block;
 	padding-top: 10px; 
 	padding-left: 6px;
 }
-
-
 
 .nav .title .logo .logoImg{
 	width: 34px;
@@ -49,43 +39,121 @@
 }
 
 .nav .title .name{
-	padding-top: 14px;
+	position: absolute;
+	display: inline-block;
 	padding-left: 5px;
+	padding-top: 10px;
 	color: #fff;
 }
 
-
 .nav .title .name p{
-	font-size: 16px;
+	font-size: 20px;
 }
 
 .nav .title .right{
-
-}
-
-.nav .title .right li{
 	float: right;
 }
 
-.nav .title .right li .option{
-	padding-top: 13px;
-	padding-right: 20px;
-	padding-left: 20px;
+.nav .title .right .option{
+	display: inline-block;
+	padding: 10px 30px 0px 30px;
 	color: #fff;
 }
 
-.nav .title .right li .option a{
+.nav .title .right .option a{
 	color: #fff;
+	font-size: 20px;
 }
+
+.nav .title .right .option a:hover{
+	color: blue;
+	font-size: 20px;
+}
+
+.nav .title .right .letter{
+	display: inline-block;
+}
+
+.nav .title .right .letter div{
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background: red;
+	top: 20px;
+	margin-left: 20px;
+	color: #fff;
+	text-align: center;
+	font-size: 10px;
+	line-height: 16px;
+}
+
+
+
+
+.nav .title .right .whiteDot{
+	display: inline-block;
+}
+
+.nav .title .right .whiteDot div{
+	width: 26px;
+	height: 26px;
+	border-radius: 50%;
+	background: #fff;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+
+
+
+
 
 
 /*头部轮播图*/
 .head{
 	position: relative;
-	height: 400px;
+	height: 700px;
 	width: 100%;
-	background: #0b0924;
+	background-image: url("image/14.png");
+	background-repeat:no-repeat;
+	background-position:top;
 }
+
+.head .dotBox{
+	position: absolute;
+	height: 30px;
+	width: 100px;
+	left: 50%;
+	bottom: 0px;
+	padding-bottom: 8px;
+	margin-left: -50px;
+	/* background: #fff; */
+	/* z-index: 102; */
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: 1fr;
+}
+
+.head .dot{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: #ccc;
+}
+
+.head .dot:hover{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: #fff;
+	cursor: pointer;
+}
+
+
+
 
 
 
@@ -94,28 +162,30 @@
 /*主体内容*/
 .content{
 	position: relative;
-	height: 1300px;
+	height: 1452px;
 	width: 100%;
-	background: #f6fdfa;
+	background: rgba(248,248,248);
 }
 
 .content .box{
-	width: 1000px;
-	height: 1300px;
-	background: #f6fdfa;
+	width: 1234px;
+	height: 1452px;
+	background: rgba(248,248,248);
 }
 
 .content .box .pad{
-	width: 900px;
-	height: 1200px;
+	width: 1134px;
+	height: 1352px;
 	padding: 50px;
-	background: #f6fdfa;
+	background: rgba(248,248,248);
 	display: grid;
 	grid-template-rows: repeat(4,1fr);
 	grid-template-columns: repeat(3,1fr);
 }
 
 .content .box .pad .item{
+	/*width: 338px;
+	height: 298px;*/
 	position: relative;
 	margin: 20px;
 	border: 1px solid #ddd;
@@ -130,17 +200,17 @@
 }
 
 .content .box .pad .item .logoBox{
-	padding-right: 94px;
-	padding-left: 94px;
+	text-align: center;
 	padding-top: 10px;
 	padding-bottom: 5px;
 	height: 70px;
 }
 
 .content .box .pad .item .logoBox img{
-	width: 70px;
-	height: 70px;
+	/*width: 70px;
+	height: 70px;*/
 }
+
 
 
 .content .box .pad .item .text{
@@ -159,14 +229,14 @@
 
 .content .box .pad .item .btn .btnBox{
 	display: inline-block;
-	width: 124px;
+	width: 49%;
 	text-align: center;
-	font-size: 18px; 
-	padding-top: 14px;
+	font-size: 24px; 
+	padding-top: 16px;
 }
 
 .content .box .pad .item .btn .btnBox a{
-	color: blue;
+	color: rgb(54, 98, 219);
 }
 
 
@@ -177,15 +247,15 @@
 /*尾部介绍栏*/
 .footer{
 	position: relative;
-	height: 300px;
+	height: 350px;
 	width: 100%;
 	background: #444;
 }
 
 .footer .present{
 	position: relative;
-	width: 860px;
-	height: 300px;
+	width: 1094px;
+	height: 350px;
 	background: #444;
 	color: #eee;
 }
@@ -213,6 +283,10 @@
 
 
 
+
+
+
+/*    产品格子尺寸 338px * 298px    */
 
 
 
