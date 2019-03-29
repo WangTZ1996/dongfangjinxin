@@ -10,7 +10,7 @@
 	margin: 0 auto;
 }
 
-@keyframes zoom{
+/* @keyframes zoom{
 	from {
 		transform: scale(1);
 	}
@@ -18,6 +18,16 @@
 		transform: scale(1.1);
 	}
 }
+
+@keyframes return{
+	from {
+		transform: scale(1.1);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+ */
 
 
 
@@ -229,13 +239,12 @@
 	border: 1px solid #ddd;
 	border-radius: 10px; 
 	background: #fff;
-	animation: zooms 1s;
+	transform: scale(1);
+	transition: transform 0.3s linear;
 }
 
 .content .box .pad .item:hover{
-	/* transform: scale(1.1); */
-	animation: zoom 0.5s;
-	animation-fill-mode: forwards;
+	transform: scale(1.1);
 }
 
 .content .box .pad .item .headline{
