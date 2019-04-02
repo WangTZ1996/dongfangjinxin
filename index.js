@@ -2,13 +2,18 @@ let mySwiper = new Swiper ('.swiper-container', {
      autoplay: {
          stopOnLastSlide: false,
      },
+     
     
+    
+
     // 如果需要分页器
     pagination: {
       el: '.swiper-pagination',
       clickable: false,
       type: 'bullets',
       bulletElement: 'li',
+      bulletClass : 'pagination',
+      bulletActiveClass: 'paginationActive',
     },
     
     // 如果需要前进后退按钮
@@ -21,4 +26,8 @@ let mySwiper = new Swiper ('.swiper-container', {
     scrollbar: {
       el: '.swiper-scrollbar',
     },
-  })        
+  }) 
+  
+  mySwiper.pagination.$el.addClass('pagHeight');
+  
+  

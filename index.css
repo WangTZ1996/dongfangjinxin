@@ -18,7 +18,7 @@
 	width: 100%;
 	background: rgba(0,0,0,0.6);
 	z-index: 100;
-	padding: 10px 0px;
+	padding: 11px 0px;
 }
 
 .nav .title{
@@ -112,6 +112,11 @@
     -webkit-background-size: cover;
 }
 
+.head .swiper-slide img{
+	width: 100%;
+	height: 100%;
+}
+
 .head .swiper-wrapper .slideText{
 	position: absolute;
 	width: 800px;
@@ -155,6 +160,24 @@
 	font-family: "PingFangSC-Medium";
 	vertical-align: middle;
 	padding-left: 29px;
+}
+
+.pagination{
+	display: inline-block;
+	margin: 0 10px;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.4);
+	/* color: #5a5a5a; */
+}
+
+.paginationActive{
+	background: #fff;
+}
+
+.pagHeight{
+	height: 27px;
 }
 
 .head .dotBox{
