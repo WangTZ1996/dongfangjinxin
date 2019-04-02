@@ -291,23 +291,16 @@
 	border-radius: 10px; 
 	background: #fff;
 	transform: scale(1);
-<<<<<<< HEAD
-	transition: transform 0.15s linear,
-	            box-shadow 0.15s linear;
+	transition: transform 0.25s cubic-bezier(0.18, 0.89, 0.32, 1.28),
+	            box-shadow 0.25s cubic-bezier(0.18, 0.89, 0.32, 1.28);
 	box-shadow: 3px 3px 15px 0 rgba(0,0,0,.12);
 }
 
 .content .box .pad .item:hover{
 	transform: scale(1.09);
 	box-shadow: 3px 3px 15px 0 rgba(0,0,0,.5);
-=======
-	transition: transform 250ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
 
-.content .box .pad .item:hover{
-	transform: scale(1.06);
->>>>>>> e9f7585ccb06146df4ee8464e0c81171358f6b7f
-}
 
 .content .box .pad .item .headline{
 	font-size: 22px;
