@@ -10,29 +10,6 @@
 	margin: 0 auto;
 }
 
-/* @keyframes zoom{
-	from {
-		transform: scale(1);
-	}
-	to {
-		transform: scale(1.1);
-	}
-}
-
-@keyframes return{
-	from {
-		transform: scale(1.1);
-	}
-	to {
-		transform: scale(1);
-	}
-}
- */
-
-
-
-
-
 /*顶端导航栏*/
 .nav{
 	position: fixed;
@@ -122,36 +99,13 @@
 	color: #fff;
 	text-align: center;
 	font-size: 10px;
-	/* line-height: 16px; */
 }
-
-/* .nav .title .list .letterBox .login{
-	display: inline-block;
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	background: #fff;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*头部轮播图*/
 .head{
 	position: relative;
 	height: 700px;
 	width: 100%;
-	/* background-image: url("image/14.png"); */
 	background-repeat:no-repeat;
 	background-position:top;
 	background-size: cover;
@@ -167,7 +121,6 @@
 	margin-top: -50px;
 	margin-left: -400px;
 	text-align: center;
-	/* line-height: 100px; */
 	display: inline-block;
 	color: #fff;
 }
@@ -204,13 +157,6 @@
 	padding-left: 29px;
 }
 
-
-
-
-
-
-
-
 .head .dotBox{
 	position: absolute;
 	height: 30px;
@@ -240,9 +186,6 @@
 	background: #fff;
 	cursor: pointer;
 }
-
-
-
 
 
 .mid{
@@ -308,17 +251,6 @@
 	text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /*主体内容*/
 .content{
 	position: relative;
@@ -335,13 +267,13 @@
 }
 
 .content .box{
-	width: 1134px;
+	width: 1140px;
 	height: 1452px;
 	background: rgba(248,248,248);
 }
 
 .content .box .pad{
-	width: 1134px;
+	width: 1140px;
 	height: 1352px;
 	padding-top: 30px;
 	padding-bottom: 50px;
@@ -352,19 +284,21 @@
 }
 
 .content .box .pad .item{
-	/*width: 338px;
-	height: 298px;*/
+	width: 340px;
 	position: relative;
 	margin: 20px;
 	border: 1px solid #ddd;
 	border-radius: 10px; 
 	background: #fff;
 	transform: scale(1);
-	transition: transform 0.15s linear;
+	transition: transform 0.15s linear,
+	            box-shadow 0.15s linear;
+	box-shadow: 3px 3px 15px 0 rgba(0,0,0,.12);
 }
 
 .content .box .pad .item:hover{
-	transform: scale(1.05);
+	transform: scale(1.09);
+	box-shadow: 3px 3px 15px 0 rgba(0,0,0,.5);
 }
 
 .content .box .pad .item .headline{
@@ -381,9 +315,6 @@
 	height: 70px;
 }
 
-
-
-
 .content .box .pad .item .text{
 	height: 60px;
 	padding-right: 26px;
@@ -393,8 +324,6 @@
 	text-align: justify;
 	/* font-family: "PingFangSC"; */
 }
-
-
 
 .content .box .pad .item .btn{
 	height: 50px;
@@ -411,11 +340,6 @@
 .content .box .pad .item .btn .btnBox a{
 	color: #477de9;;
 }
-
-
-
-
-
 
 /*尾部介绍栏*/
 .footer{
@@ -455,16 +379,4 @@
 	font-size: 14px;
 }
 
-
-
-
-
-
-
 /*    产品格子尺寸 338px * 298px    */
-
-
-
-
-
-
