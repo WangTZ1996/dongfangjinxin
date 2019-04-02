@@ -1,0 +1,10 @@
+deploy:
+  stage: deploy
+  script:
+    - 'docker run hello-world'
+    - 'rm -rf /apps/ej-samp-frontpage'
+    - 'mkdir -p /apps/ej-samp-frontpage'
+    - 'cp -r $CI_PROJECT_DIR/* /apps/ej-samp-frontpage/'
+    - 'cd /apps/ej-samp-frontpage'
+    - 'docker-compose up -d'
+    - 'echo It works!'
