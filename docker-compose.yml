@@ -4,5 +4,6 @@ services:
     image: openresty/openresty:alpine
     volumes:
       - .:/usr/local/openresty/nginx/html
+      - ./nginx.conf:/etc/nginx/conf.d/samp.conf
     ports:
       - "10180:80"
