@@ -31,7 +31,17 @@ let mySwiper = new Swiper ('.swiper-container', {
   },
 })
 
-function roll(index, count) {
+
+function getDataNumeber(slide) {
+  const span = slide.querySelector('span');
+  span.textContent = span.dataset.number;
+  let count = span.dataset.number;
+  roll(this.activeIndex,count,span);
+}
+
+
+
+function roll(index, count, span) {
   // let number = document.getElementsByClassName('number')[index];
   let num = {
     value: 0
@@ -48,12 +58,9 @@ function roll(index, count) {
   tween.to({ value: count }, 1500);
   tween.easing(TWEEN.Easing.Quadratic.Out);
   tween.onUpdate(function () {
-    number.innerHTML = Math.round(num.value) + 'T';
+    span.textContent = Math.round(num.value);
   });
   tween.start();
 }
 
-function getDataNumeber(slide) {
-  const span = slide.querySelector('span');
-  span.textContent = span.dataset.number;
-}
+
